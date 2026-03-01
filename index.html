@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven Pizza Menu - منيو هافين بيتزا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #008450;
+            --accent-orange: #fbb03b;
+            --white: #ffffff;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+        }
+
+        header {
+            background-color: var(--primary-green);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 5px solid var(--accent-orange);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .section-title {
+            background-color: var(--accent-orange);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .promo-box {
+            background: #fff3cd;
+            border: 2px dashed #856404;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            background: white;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: right;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f8f8f8;
+            color: var(--primary-green);
+        }
+
+        .price-col {
+            text-align: center;
+            font-weight: bold;
+            color: var(--primary-green);
+            width: 60px;
+        }
+
+        .pizza-sizes {
+            display: flex;
+            gap: 15px;
+            font-size: 0.8em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            th, td { padding: 8px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HEAVEN PIZZA</h1>
+    <p>Best Pizza - هافين بيتزا</p>
+</header>
+
+<div class="container">
+
+    <div class="promo-box">
+        استمتع بكل لقمة! اطلب أي نوع من البيتزا مع أطراف محشوة بالجبنة +10 لجميع الأحجام
+    </div>
+
+    <h2 class="section-title">البيتزا <span>S / M / L</span></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>الصنف</th>
+                <th class="price-col">S</th>
+                <th class="price-col">M</th>
+                <th class="price-col">L</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>هافين بيتزا</td><td class="price-col">30</td><td class="price-col">40</td><td class="price-col">50</td></tr>
+            <tr><td>بيتزا بالجبنة</td><td class="price-col">30</td><td class="price-col">40</td><td class="price-col">50</td></tr>
+            <tr><td>بيتزا بالخضار</td><td class="price-col">30</td><td class="price-col">40</td><td class="price-col">50</td></tr>
+            <tr><td>بيتزا ستيك اللحم</td><td class="price-col">40</td><td class="price-col">50</td><td class="price-col">60</td></tr>
+            <tr><td>بيتزا اللحمة المفرومة</td><td class="price-col">40</td><td class="price-col">50</td><td class="price-col">60</td></tr>
+            <tr><td>بيتزا تونة</td><td class="price-col">40</td><td class="price-col">50</td><td class="price-col">60</td></tr>
+            <tr><td>بيتزا دجاج</td><td class="price-col">40</td><td class="price-col">50</td><td class="price-col">60</td></tr>
+            <tr><td>بيتزا دجاج بالباربكيو</td><td class="price-col">40</td><td class="price-col">50</td><td class="price-col">60</td></tr>
+            <tr><td>بيتزا دجاج بالشامل</td><td class="price-col">45</td><td class="price-col">55</td><td class="price-col">65</td></tr>
+            <tr><td>بيتزا جمبري بالبشاميل</td><td class="price-col">45</td><td class="price-col">55</td><td class="price-col">65</td></tr>
+            <tr><td>بيتزا جمبري</td><td class="price-col">40</td><td class="price-col">50</td><td class="price-col">60</td></tr>
+        </tbody>
+    </table>
+
+    <h2 class="section-title">الساندوتشات <span>ساندوتش / وجبة</span></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>الصنف</th>
+                <th class="price-col">ساندوتش</th>
+                <th class="price-col">وجبة</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>همبرغر هافين</td><td class="price-col">17</td><td class="price-col">25</td></tr>
+            <tr><td>همبرغر كرسبي</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>همبرغر شنيتسل</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>همبرغر صدر دجاج</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>ستيك صدر دجاج</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>مسحب</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>زنجر</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>شنيتسل دجاج</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>تشكن راب</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>ستيك اللحم</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>تونة</td><td class="price-col">15</td><td class="price-col">23</td></tr>
+            <tr><td>روست بيف</td><td class="price-col">15</td><td class="price-col">-</td></tr>
+            <tr><td>جمبري</td><td class="price-col">-</td><td class="price-col">50</td></tr>
+            <tr><td>وجبة صحية</td><td class="price-col">-</td><td class="price-col">20</td></tr>
+        </tbody>
+    </table>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div>
+            <h2 class="section-title" style="font-size: 1.1em;">السلطات</h2>
+            <table>
+                <tbody>
+                    <tr><td>يونانية بالجبنة البيضاء</td><td class="price-col">15</td></tr>
+                    <tr><td>مكسيكية بالجبنة الصفراء</td><td class="price-col">15</td></tr>
+                    <tr><td>سيزر بالدجاج</td><td class="price-col">20</td></tr>
+                    <tr><td>سلطة جرجير</td><td class="price-col">20</td></tr>
+                    <tr><td>سلطة تونة</td><td class="price-col">20</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2 class="section-title" style="font-size: 1.1em;">المقبلات</h2>
+            <table>
+                <tbody>
+                    <tr><td>أجنحة دجاج حارة</td><td class="price-col">15</td></tr>
+                    <tr><td>خبز بالثوم</td><td class="price-col">10</td></tr>
+                    <tr><td>حلقات بصل</td><td class="price-col">15</td></tr>
+                    <tr><td>أصابع دجاج/جبنة</td><td class="price-col">20</td></tr>
+                    <tr><td>بطاطا (ص/و/ك)</td><td class="price-col">5 / 7 / 12</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<footer style="text-align: center; padding: 20px; color: #888; font-size: 0.9em;">
+    &copy; 2026 Heaven Pizza - جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
